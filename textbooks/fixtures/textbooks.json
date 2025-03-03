@@ -1,0 +1,84 @@
+[
+  {
+    "model": "textbooks.textbook",
+    "pk": 1,
+    "fields": {
+      "title": "Introduction to Algorithms",
+      "author": "Thomas H. Cormen",
+      "edition": "3rd",
+      "condition": "New",
+      "availability": true,
+      "course": "COMP346"
+    }
+  },
+  {
+    "model": "textbooks.textbook",
+    "pk": 2,
+    "fields": {
+      "title": "Artificial Intelligence: A Modern Approach",
+      "author": "Stuart Russell",
+      "edition": "4th",
+      "condition": "Used",
+      "availability": true,
+      "course": "COMP346"
+    }
+  },
+  {
+    "model": "textbooks.textbook",
+    "pk": 3,
+    "fields": {
+      "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+      "author": "Robert C. Martin",
+      "edition": "1st",
+      "condition": "Written",
+      "availability": false,
+      "course": "COMP346"
+    }
+  },
+  {
+    "model": "textbooks.textbook",
+    "pk": 4,
+    "fields": {
+      "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+      "author": "Erich Gamma",
+      "edition": "1st",
+      "condition": "Old",
+      "availability": true,
+      "course": "COMP345"
+    }
+  },
+  {
+    "model": "textbooks.textbook",
+    "pk": 5,
+    "fields": {
+      "title": "The Pragmatic Programmer",
+      "author": "Andrew Hunt",
+      "edition": "2nd",
+      "condition": "New",
+      "availability": true,
+      "course": "COMP345"
+    }
+  },
+  {
+    "model": "textbooks.textbook",
+    "pk": 6,
+    "fields": {
+      "title": "Refactoring: Improving the Design of Existing Code",
+      "author": "Martin Fowler",
+      "condition": "Written",
+      "availability": true,
+      "course": "COMP347"
+    }
+  },
+  {
+    "model": "textbooks.textbook",
+    "pk": 7,
+    "fields": {
+      "title": "Code Complete",
+      "author": "Steve McConnell",
+      "condition": "Old",
+      "availability": false,
+      "course": "COMP347"
+    }
+  }
+]

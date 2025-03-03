@@ -1,0 +1,61 @@
+<!-- textbooks/textbook_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Available Textbooks</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+<h1>Available Textbook</h1>
+{% if all_textbooks %}
+    <table>
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Edition</th>
+            <th>Condition</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for textbook in all_textbooks %}
+            <tr>
+                <td>{{ textbook.title }}</td>
+                <td>{{ textbook.author }}</td>
+                <td>{{ textbook.edition }}</td>
+                <td>{{ textbook.condition }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>No textbooks available for course: <strong>{{ course_id }}</strong></p>
+{% endif %}
+</body>
+</html>
